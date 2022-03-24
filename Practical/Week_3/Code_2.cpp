@@ -4,16 +4,16 @@ using namespace std;
 void selectionSort(int arr[] , int n , int *c)
 {
     int min;
-    for(int i = 0 ; i<n-1 ; i++)
+    for(i = 0 ; i<n-1 ; i++)
     {
         min = i;
-        for(int j = i+1 ; j<n ; j++)
+        for(j = i+1 ; j<n ; j++)
         {
             *c = *c + 1;
             if(arr[j] < arr[i])
                 min = j;
         }
-        swap(&arr[min] , &arr[j]);
+        swap(arr[min] , arr[i]);
     }
 }
 void swap(int *a , int *b)
