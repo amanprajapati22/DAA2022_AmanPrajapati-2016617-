@@ -12,7 +12,7 @@ void bubbleSort(int arr[] , int n , int *c)
             *c = *c + 1;
             if(arr[j] > arr[j+1])
             {
-                swap(arr[j],arr[j+1]);
+                swap(&arr[j],&arr[j+1]);
                 s=1;
             }
         }
